@@ -46,6 +46,8 @@ const RentalDashboard = () => {
                   src="/View 1.png"
                   alt="Nissan GT-R"
                   className=" rounded-lg object-cover mr-4 w-[132px] h-[72px]"
+                  width={132}
+                  height={72}
                 />
               </div>
               <div>

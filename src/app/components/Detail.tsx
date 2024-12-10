@@ -27,7 +27,7 @@ const Detail = () => {
                 <Image
                   alt="Sports Car"
                   className="rounded"
-                  src="./car8.png" // Ensure this is in the public folder
+                  src="/car8.png" // Ensure this is in the public folder
                   width={380}
                   height={220}
                 />
