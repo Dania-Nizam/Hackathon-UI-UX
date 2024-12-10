@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 
 const RentalForm = () => {
@@ -79,7 +80,7 @@ const RentalForm = () => {
       <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
         <h2 className="text-lg font-semibold mb-4">Rental Summary</h2>
         <div className="flex items-center mb-4">
-          <img
+          <Image
             src="/View 1.png"
             alt="Nissan GT-R"
             className="w-20 h-12 rounded-lg object-cover mr-4"

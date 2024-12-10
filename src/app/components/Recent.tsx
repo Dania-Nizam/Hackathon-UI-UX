@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 
 const Recent = () => {
@@ -97,15 +98,15 @@ const Recent = () => {
               <div className="flex justify-between text-sm text-gray-500 mt-4">
                 <p>
                   {car.fuel}
-                  <img src="/gas.png" alt="" width={24} height={24} />
+                  <Image src="/gas.png" alt="" width={24} height={24} />
                 </p>
                 <p>
                   {car.transmission}{" "}
-                  <img src="/c.png" alt="" width={24} height={24} />
+                  <Image src="/c.png" alt="" width={24} height={24} />
                 </p>
                 <p>
                   {car.people}{" "}
-                  <img src="/pro.png" alt="" width={24} height={24} /> People
+                  <Image src="/pro.png" alt="" width={24} height={24} /> People
                 </p>
               </div>
 

@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar from "./Sidebar";
+import Image from "next/image";
 
 const Detail = () => {
   return (
@@ -23,7 +24,7 @@ const Detail = () => {
                 car
               </p>
               <div className="flex justify-center mb-6">
-                <img
+                <Image
                   alt="Sports Car"
                   className="rounded"
                   src="./car8.png" // Ensure this is in the public folder

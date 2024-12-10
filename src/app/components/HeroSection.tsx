@@ -1,5 +1,6 @@
 import React from "react";
 import PickupDropoffSection from "./PickupDropoffSection";
+import Image from "next/image";
 
 
 const HeroSection = () => {
@@ -40,7 +41,7 @@ const HeroSection = () => {
               </button>
             </div>
             <div className="lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-              <img src={item.image} alt={item.title} width={12} height={12} className="w-3/4 h-auto " />
+              <Image src={item.image} alt={item.title} width={12} height={12} className="w-3/4 h-auto " />
             </div>
           </div>
         ))}

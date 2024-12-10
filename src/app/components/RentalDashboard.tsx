@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 
 const RentalDashboard = () => {
@@ -38,10 +39,10 @@ const RentalDashboard = () => {
             <h2 className="font-semibold text-lg mb-4">Details Rental</h2>
             <div className="w-[534px] h-[836px] top-[32px] left-[318px] rounded-[10px]">
               <div className="bg-gray-100 rounded-lg h-40 mb-6">
-                <img src="/Maps.png" alt="" width={486} height={272} />
+                <Image src="/Maps.png" alt="" width={486} height={272} />
               </div>
               <div className="flex items-center  mt-44">
-                <img
+                <Image
                   src="/View 1.png"
                   alt="Nissan GT-R"
                   className=" rounded-lg object-cover mr-4 w-[132px] h-[72px]"
