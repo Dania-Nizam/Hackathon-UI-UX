@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 
 const Recent = () => {
   const cars = [
@@ -85,7 +85,7 @@ const Recent = () => {
               <p className="text-sm text-gray-500">{car.type}</p>
             </div>
             <div className="object-center ml-7">
-              <Image
+              <img
                 src={car.image}
                 alt={car.name}
                 className="w-[232px] h-[72px] object-center"
@@ -97,15 +97,15 @@ const Recent = () => {
               <div className="flex justify-between text-sm text-gray-500 mt-4">
                 <p>
                   {car.fuel}
-                  <Image src="/gas.png" alt="" width={24} height={24} />
+                  <img src="/gas.png" alt="" width={24} height={24} />
                 </p>
                 <p>
                   {car.transmission}{" "}
-                  <Image src="/c.png" alt="" width={24} height={24} />
+                  <img src="/c.png" alt="" width={24} height={24} />
                 </p>
                 <p>
                   {car.people}{" "}
-                  <Image src="/pro.png" alt="" width={24} height={24} /> People
+                  <img src="/pro.png" alt="" width={24} height={24} /> People
                 </p>
               </div>
 

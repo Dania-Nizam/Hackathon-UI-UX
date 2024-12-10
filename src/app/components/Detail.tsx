@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import Sidebar from "./Sidebar";
 
 const Detail = () => {
@@ -24,7 +24,7 @@ const Detail = () => {
                 car
               </p>
               <div className="flex justify-center mb-6">
-                <Image
+                <img
                   alt="Sports Car"
                   className="rounded"
                   src="/car8.png"
@@ -34,7 +34,7 @@ const Detail = () => {
               </div>
               <div className="flex gap-4 justify-center">
                 {[1, 2, 3].map((_, idx) => (
-                  <Image
+                  <img
                     key={idx}
                     src={`/View ${idx + 1}.png`}
                     alt={`View ${idx + 1}`}
