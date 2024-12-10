@@ -1,5 +1,4 @@
 import React from "react";
-
 import Sidebar from "./Sidebar";
 
 const Detail = () => {
@@ -27,7 +26,7 @@ const Detail = () => {
                 <img
                   alt="Sports Car"
                   className="rounded"
-                  src="/car8.png"
+                  src="./car8.png" // Ensure this is in the public folder
                   width={380}
                   height={220}
                 />
@@ -36,7 +35,7 @@ const Detail = () => {
                 {[1, 2, 3].map((_, idx) => (
                   <img
                     key={idx}
-                    src={`/View ${idx + 1}.png`}
+                    src={`/View ${idx + 1}.png`} // Ensure these are in the public folder
                     alt={`View ${idx + 1}`}
                     width={148}
                     height={124}
@@ -57,6 +56,7 @@ const Detail = () => {
                     fill="currentColor"
                     className="w-4 h-4 text-[#FBAD39]"
                     viewBox="0 0 24 24"
+                    aria-label="Star rating"
                   >
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
@@ -65,6 +65,7 @@ const Detail = () => {
                   fill="none"
                   className="w-4 h-4 text-[#FBAD39]"
                   viewBox="0 0 24 24"
+                  aria-label="Star rating"
                 >
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                 </svg>
