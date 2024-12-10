@@ -34,7 +34,7 @@ const Detail = () => {
               </div>
               <div className="flex gap-4 justify-center">
                 {[1, 2, 3].map((_, idx) => (
-                  <img
+                  <Image
                     key={idx}
                     src={`/View ${idx + 1}.png`} // Ensure these are in the public folder
                     alt={`View ${idx + 1}`}

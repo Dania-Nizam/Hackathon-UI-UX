@@ -123,7 +123,7 @@ const Category = () => {
                 <p className="text-sm text-gray-500 mb-4">{car.type}</p>
 
                 <div className="flex justify-center mb-4">
-                  <img
+                  <Image
                     src={car.image}
                     alt={car.name}
                     className="w-full h-auto object-contain"
