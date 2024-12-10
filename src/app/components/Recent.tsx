@@ -86,7 +86,7 @@ const Recent = () => {
               <p className="text-sm text-gray-500">{car.type}</p>
             </div>
             <div className="object-center ml-7">
-              <img
+              <Image
                 src={car.image}
                 alt={car.name}
                 className="w-[232px] h-[72px] object-center"

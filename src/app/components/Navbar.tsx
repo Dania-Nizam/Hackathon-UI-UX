@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { IoHeart, IoSearch } from "react-icons/io5";
 import { IoMdSettings } from "react-icons/io";
@@ -16,7 +17,7 @@ const Navbar = () => {
         {/* Left Section */}
         <div className="flex items-center gap-3">
           <div>
-            <img
+            <Image
               src="/command.png"
               alt="Command Icon"
               width={32}
@@ -71,7 +72,7 @@ const Navbar = () => {
               placeholder="Search something here"
               className="ml-2 outline-none text-sm text-gray-600"
             />
-            <img
+            <Image
               src="/filter.png"
               alt=""
               width={24}
@@ -86,7 +87,7 @@ const Navbar = () => {
               <IoHeart className="w-5 h-5 text-gray-600" />
             </button>
             <button className="p-2 border border-[#C3D4E966] rounded-full">
-              <img
+              <Image
                 src="/notification.png"
                 alt="Notification"
                 width={24}
@@ -97,7 +98,7 @@ const Navbar = () => {
               <IoMdSettings className="w-5 h-5 text-gray-600" />
             </button>
             <button className="p-2 border border-[#C3D4E966] rounded-full">
-              <img
+              <Image
                 src="/Image.png"
                 alt="Profile"
                 width={24}
@@ -149,7 +150,7 @@ const Navbar = () => {
                   <IoHeart className="w-5 h-5 text-gray-600" />
                 </button>
                 <button className="flex items-center justify-center p-2 border border-[#C3D4E966] rounded-full">
-                  <img
+                  <Image
                     src="/notification.png"
                     alt="Notification"
                     width={24}
@@ -160,7 +161,7 @@ const Navbar = () => {
                   <IoMdSettings className="w-5 h-5 text-gray-600" />
                 </button>
                 <button className="w-[236px] h-[44px] top-[40px] left-[1172px] gap-[20px] ">
-                  <img
+                  <Image
                     src="/Image.png"
                     alt=""
                     width={44}
