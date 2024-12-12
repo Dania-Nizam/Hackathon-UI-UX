@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Links Section */}
         <div className="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
           {/* About Section */}
-          <div className="lg:w-1/4 md:w-1/2 px-4 w-full lg:ml-44  leading-[50px]">
+          <div className="lg:w-1/4 md:w-1/2 px-4 w-full lg:ml-32  leading-[50px]">
             <h2 className="title-font font-sans font-semibold mb-3 text-xl leading-[30px] tracking-[-2%] text-[#1A202C]">
               About
             </h2>
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
 
           {/* Community Section */}
-          <div className="lg:w-1/4 md:w-1/2 px-4 w-full lg:ml-10 leading-[50px]">
+          <div className="lg:w-1/4 md:w-1/2 px-4 w-full lg:ml-6 leading-[50px]">
             <h2 className="title-font font-sans font-semibold mb-3 text-xl leading-[30px] tracking-[-2%] text-[#1A202C]">
               Community
             </h2>

@@ -42,7 +42,7 @@ const HeroSection = () => {
               </button>
             </div>
             <div className="lg:w-1/2 flex justify-center mt-6 lg:mt-0">
-              <Image src={item.image} alt={item.title} width={12} height={12} className="w-3/4 h-auto " />
+              <Image src={item.image} alt={item.title} width={406} height={116} className="w-3/4 h-auto " />
             </div>
           </div>
         ))}

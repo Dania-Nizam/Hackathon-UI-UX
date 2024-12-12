@@ -153,8 +153,9 @@ const Recomendation = () => {
           </div>
         ))}
       </div>
+<div><button className="w-[156px] h-[44px] rounded-[4px] pr-[20px] pl-[20px] gap-[8px] bg-[#3563E9] mt-5 text-white">Show more car</button></div>
     </div>
   );
 };
 
-export default Recomendation;
+export default Recomendation

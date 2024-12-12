@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import PaymentConfirmation from "../components/Payment";
 
 
 const RentalForm = () => {
@@ -74,7 +75,11 @@ const RentalForm = () => {
             </div>
           </div>
         </div>
+
+        
       </div>
+
+      
 
       {/* Summary Section */}
       <div className="bg-white p-6 rounded-lg shadow-md w-full lg:w-1/3">
@@ -120,6 +125,7 @@ const RentalForm = () => {
           </div>
         </div>
       </div>
+      <PaymentConfirmation/>
     </div>
   );
 };

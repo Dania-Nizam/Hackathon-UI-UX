@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`flex flex-col bg-white shadow-lg  transition-all duration-300 w-[400px] h-full  ${
+      className={`flex flex-col bg-white shadow-lg  transition-all duration-300 w-[400px] h-full   ${
         isExpanded ? "w-64" : "w-16"
       }`}
     >

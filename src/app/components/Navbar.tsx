@@ -77,7 +77,7 @@ const Navbar = () => {
               alt=""
               width={24}
               height={24}
-              className="ml-48"
+              className="ml-60"
             />
           </div>
 
@@ -97,15 +97,15 @@ const Navbar = () => {
             <button className="p-2 border border-[#C3D4E966] rounded-full">
               <IoMdSettings className="w-5 h-5 text-gray-600" />
             </button>
-            <button className="p-2 border border-[#C3D4E966] rounded-full">
+            
               <Image
                 src="/Image.png"
                 alt="Profile"
-                width={24}
-                height={24}
+                width={44}
+                height={44}
                 className="rounded-full"
               />
-            </button>
+            
           </div>
 
           {/* Mobile Menu Toggle */}

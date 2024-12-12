@@ -9,6 +9,8 @@ export default function Home() {
 
       <CarRental />
       <Recomendation />
+
+      
     </div>
   );
 }

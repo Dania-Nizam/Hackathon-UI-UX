@@ -1,7 +1,9 @@
+"use client"
+
 import React from "react";
 import Image from "next/image";
 import PickupDropoffSection from "./PickupDropoffSection";
-import Sidebar from "./Sidebar";
+import FilterComponent from "./Filter";
 
 const Category = () => {
   const cars = [
@@ -103,12 +105,12 @@ const Category = () => {
 
   return (
     <div className="p-6 bg-[#F6F7F9] flex flex-col lg:flex-row lg:space-x-6">
-      <div className="lg:w-1/4">
-        <Sidebar />
+      <div className="lg:w-1/3 ">
+       <FilterComponent/>
       </div>
 
       <div className="lg:w-3/4">
-        <div className="mb-6">
+        <div className="mb-10 pb-4">
           <PickupDropoffSection />
         </div>
 
