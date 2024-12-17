@@ -5,8 +5,7 @@ import Image from "next/image";
 const PaymentConfirmation: React.FC = () => {
   const [selectedPayment, setSelectedPayment] = useState<string>("credit-card");
   const [termsAccepted, setTermsAccepted] = useState<boolean>(false);
-  const [newsletterAccepted, setNewsletterAccepted] = useState<boolean>(false);
-
+ 
   return (
     <div>
       <div className=" w-[852px] h-[596px] rounded-[10px] p-6   bg-white shadow-lg border border-gray-200 space-y-8 mt-6 mb-2 ">
