@@ -22,9 +22,9 @@ const Sidebar = () => {
 
   return (
     <div
-      className={`flex flex-col bg-white shadow-lg  transition-all duration-300 w-[400px] h-full   ${
-        isExpanded ? "w-64" : "w-16"
-      }`}
+      className={`flex flex-col bg-white shadow-lg transition-all duration-300 
+        ${isExpanded ? "w-64" : "w-16"} 
+        sm:w-16 md:w-64 lg:w-64 xl:w-64 h-full overflow-auto`}
     >
       {/* Toggle Button */}
       <button

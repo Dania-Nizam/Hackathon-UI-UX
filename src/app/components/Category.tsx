@@ -15,7 +15,8 @@ const Category = () => {
       fuel: "70L",
       transmission: "Manual",
       people: 6,
-      image: "/car.png",
+      image: "/hero1.png",
+      image1:"/heart.png",
     },
     {
       name: "CR  - V",
@@ -25,7 +26,8 @@ const Category = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car1.png",
+      image: "/hero2.png",
+      image1:"/heart.png",
     },
     {
       name: "All New Terios",
@@ -35,7 +37,8 @@ const Category = () => {
       fuel: "90L",
       transmission: "Manual",
       people: 4,
-      image: "/car2.png",
+      image: "/pC3.png",
+      image1:"/heart.png",
     },
     {
       name: "CR  - V",
@@ -45,7 +48,8 @@ const Category = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car1.png",
+      image: "/car.png",
+      image1:"/heart.png",
     },
 
     {
@@ -56,7 +60,32 @@ const Category = () => {
       fuel: "70L",
       transmission: "Manual",
       people: 2,
-      image: "/car4.png",
+      image: "/car1.png",
+      image1:"/heart.png",
+    },
+
+    {
+      name: "New MG ZS",
+      type: "SUV",
+      price: 80,
+      originalPrice: 100,
+      fuel: "80L",
+      transmission: "Manual",
+      people: 2,
+      image: "/car.png",
+      image1:"/heart.png",
+    },
+
+    {
+      name: "MG ZX Excite",
+      type: "Hatchback",
+      price: 74.0,
+      originalPrice: 100,
+      fuel: "90L",
+      transmission: "Manual",
+      people: 2,
+      image: "/car6.png",
+      image1:"/heart.png",
     },
 
     {
@@ -68,28 +97,7 @@ const Category = () => {
       transmission: "Manual",
       people: 2,
       image: "/car5.png",
-    },
-
-    {
-      name: "MG ZX Excite",
-      type: "Hatchback",
-      price: 74.0,
-      originalPrice: 100,
-      fuel: "90L",
-      transmission: "Manual",
-      people: 2,
-      image: "/car6.png",
-    },
-
-    {
-      name: "New MG ZS",
-      type: "SUV",
-      price: 80,
-      originalPrice: 100,
-      fuel: "80L",
-      transmission: "Manual",
-      people: 2,
-      image: "/pC3.png",
+      image1:"/heart.png",
     },
     {
       name: "MG ZX Excite",
@@ -100,6 +108,7 @@ const Category = () => {
       transmission: "Manual",
       people: 2,
       image: "/car6.png",
+      image1:"/heart.png",
     },
   ];
 
@@ -121,7 +130,7 @@ const Category = () => {
               key={index}
             >
               <div className="p-4">
-                <h3 className="text-lg font-semibold mb-2">{car.name}</h3>
+                <div className="flex"><h3 className="text-lg font-semibold mb-2">{car.name}</h3><div className="w-[24px] h-[24px] ml-24 "><Image src={car.image1} alt="" width={24} height={24}/></div></div>
                 <p className="text-sm text-gray-500 mb-4">{car.type}</p>
 
                 <div className="flex justify-center mb-4">

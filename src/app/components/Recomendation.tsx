@@ -12,7 +12,8 @@ const Recomendation = () => {
       fuel: "70L",
       transmission: "Manual",
       people: 6,
-      image: "/car.png",
+      image: "/Car.png",
+      image1:"/heart.png",
     },
     {
       name: "CR  - V",
@@ -23,6 +24,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/car1.png",
+      image1:"/heart.png",
     },
     {
       name: "All New Terios",
@@ -33,6 +35,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 4,
       image: "/car2.png",
+      image1:"/heart.png",
     },
     {
       name: "CR  - V",
@@ -43,6 +46,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/car1.png",
+      image1:"/heart.png",
     },
 
     {
@@ -54,6 +58,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/car4.png",
+      image1:"/heart.png",
     },
 
     {
@@ -65,6 +70,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/car5.png",
+      image1:"/heart.png",
     },
 
     {
@@ -76,6 +82,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/car6.png",
+      image1:"/heart.png",
     },
 
     {
@@ -87,6 +94,7 @@ const Recomendation = () => {
       transmission: "Manual",
       people: 2,
       image: "/pC3.png",
+      image1:"/heart.png",
     },
   ];
 
@@ -97,17 +105,17 @@ const Recomendation = () => {
           Recomendation Car
         </h2>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-6">
+      <div className="grid md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4  grid-cols-1 gap-6">
         {cars.map((car, index) => (
           <div
-            className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
+            className="border border-gray-300  rounded-lg shadow-md bg-white overflow-hidden"
             key={index}
           >
             <div className="p-4 w-[304px] h-[200px]">
-              <h3 className="text-lg font-semibold">{car.name}</h3>
-              <p className="text-sm text-gray-500">{car.type}</p>
+              <div className="flex"><h3 className="text-lg font-semibold gap-20">{car.name}</h3><div className="w-[24px] h-[24px] ml-24 "><Image src={car.image1} alt="" width={24} height={24}/></div></div>
+              <p className="text-sm text-gray-500 mr-44">{car.type}</p>
             </div>
-            <div className="object-center ml-7">
+            <div className="object-center lg:ml-7">
               <Image
                 src={car.image}
                 alt={car.name}

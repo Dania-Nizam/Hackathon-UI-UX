@@ -1,67 +1,62 @@
 import React from "react";
-import Sidebar from "./Sidebar";
 import Image from "next/image";
+import FilterComponent from "./Filter";
+import Reviews from "./Reviews";
+import Recent from "./Recent";
 
 const Detail = () => {
   return (
     <div className="p-6 bg-[#F6F7F9] flex flex-col lg:flex-row lg:space-x-6">
-      {/* Sidebar Section */}
+      {/* Filter Section */}
       <div className="lg:w-1/4">
-        <Sidebar />
+        <FilterComponent />
       </div>
 
       {/* Main Content Section */}
-      <section className="text-gray-600 body-font overflow-hidden bg-[#F6F7F9] lg:w-3/4">
+      <section className="text-gray-600 body-font bg-[#F6F7F9]  flex-1">
         <div className="container mx-auto px-5 py-12">
-          <div className="flex flex-col lg:flex-row lg:space-x-6">
+          {/* Flex Container for Sports Car and Nissan GT */}
+          <div className="flex flex-col lg:flex-row lg:space-x-4">
             {/* Sports Car Section */}
-            <div className="flex-1 bg-[#3563E9] rounded-[10px] p-6 text-white">
-              <h1 className="font-sans font-semibold text-4xl mb-4">
+            <div className="flex-1 bg-[#3563E9] rounded-[10px] w-[492px] h-[350px] p-6 text-white">
+              <h1 className="font-sans font-semibold text-[32px] lg:text-4xl mb-4 leading-[48px] tracking-[-3%]">
                 Sports car with the best design and acceleration
               </h1>
-              <p className="font-medium text-base mb-6">
+              <p className="font-medium text-base leading-[24px] tracking-[-2%] mb-6">
                 Safety and comfort while driving a futuristic and elegant sports
                 car
               </p>
-              <div className="flex justify-center mb-6">
+
+              {/* Main Sports Car Image */}
+              <div className="mb-4">
                 <Image
                   alt="Sports Car"
                   className="rounded"
-                  src="/car8.png" // Ensure this is in the public folder
+                  src="/car8.png" // Image must exist in public folder
                   width={380}
                   height={220}
                 />
               </div>
-              <div className="flex gap-4 justify-center">
-                {[1, 2, 3].map((_, idx) => (
-                  <Image
-                    key={idx}
-                    src={`/View ${idx + 1}.png`} // Ensure these are in the public folder
-                    alt={`View ${idx + 1}`}
-                    width={148}
-                    height={124}
-                  />
-                ))}
-              </div>
             </div>
 
             {/* Nissan GT Section */}
-            <div className="flex-1 bg-white rounded-[10px] p-6">
-              <h1 className="text-gray-900 text-3xl font-medium mb-4">
+            <div className="flex-1 bg-white rounded-[10px] w-[492px] h-[508px] p-6 mt-8 lg:mt-0">
+              <h1 className="text-gray-900 text-3xl font-semibold mb-4">
                 Nissan GT - R
               </h1>
-              <div className="flex mb-4 items-center">
-                
-                
-                <span className="text-gray-600 ml-3">440+ Reviewer</span>
+              <div className="flex items-center mb-4">
+                <span className="text-gray-600">440+ Reviewer</span>
               </div>
-              <p className="leading-relaxed mb-6">
+
+              <p className="leading-relaxed mb-6 text-gray-700">
                 NISMO has become the embodiment of Nissan's outstanding
                 performance, inspired by the most unforgiving proving ground,
                 the "race track".
               </p>
-              <div className="border-t-2 border-gray-100 pt-4">
-                <div className="flex justify-between text-sm text-[#90A3BF] mb-2">
+
+              {/* Specifications */}
+              <div className="border-t-2 border-gray-100 pt-4 space-y-2">
+                <div className="flex justify-between text-sm text-[#90A3BF]">
                   <span>
                     Type Car: <span className="text-black">Sport</span>
                   </span>
@@ -78,6 +73,8 @@ const Detail = () => {
                   </span>
                 </div>
               </div>
+
+              {/* Price and Rent Button */}
               <div className="flex items-center mt-6">
                 <span className="text-2xl text-gray-900 font-medium">
                   $80.00/day
@@ -85,18 +82,36 @@ const Detail = () => {
                 <span className="ml-2 text-base text-[#90A3BF] line-through">
                   $100.00
                 </span>
-                <button className="ml-auto bg-[#3563E9] text-white py-2 px-6 rounded">
+                <button className="ml-auto bg-[#3563E9] text-white py-2 px-6 rounded hover:bg-[#2A4EBA]">
                   Rent Now
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Recent Cars Section */}
-          <div className="mt-12 bg-white rounded-[10px] p-6">
-            <h2 className="text-xl font-semibold mb-4">Recent Cars</h2>
-            {/* Adjust content inside as needed */}
+          {/* Smaller Images outside the blue div */}
+          <div className="flex flex-row  justify-center  mr-[500px] gap-3  mt-0">
+            {[1, 2, 3].map((_, idx) => (
+              <Image
+                key={idx}
+                src={`/View ${idx + 1}.png`} // Ensure these images exist in public
+                alt={`View ${idx + 1}`}
+                width={148}
+                height={124}
+                className="rounded shadow-md"
+              />
+            ))}
           </div>
+        </div>
+
+        {/* Reviews Section */}
+        <div className="">
+          <Reviews />
+        </div>
+
+        {/* Recent Section */}
+        <div className="">
+          <Recent />
         </div>
       </section>
     </div>

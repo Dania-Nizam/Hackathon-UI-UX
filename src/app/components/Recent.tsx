@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-
 const Recent = () => {
   const cars = [
     {
@@ -12,17 +11,19 @@ const Recent = () => {
       fuel: "70L",
       transmission: "Manual",
       people: 6,
-      image: "/car.png",
+      image: "/hero1.png",
+      image1: "/heart.png",
     },
     {
-      name: "CR  - V",
+      name: "CR - V",
       type: "SUV",
       price: 80,
       originalPrice: 100,
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car1.png",
+      image: "/pC4.png",
+      image1: "/heart.png",
     },
     {
       name: "All New Terios",
@@ -32,30 +33,31 @@ const Recent = () => {
       fuel: "90L",
       transmission: "Manual",
       people: 4,
-      image: "/car2.png",
+      image: "/pC3.png",
+      image1: "/heart.png",
     },
     {
-      name: "CR  - V",
+      name: "CR - V",
       type: "SUV",
       price: 80,
       originalPrice: 100,
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car1.png",
+      image: "/car.png",
+      image1: "/heart.png",
     },
-
     {
-      name: "CR  - V",
+      name: "CR - V",
       type: "SUV",
       price: 76.0,
       originalPrice: 100,
       fuel: "70L",
       transmission: "Manual",
       people: 2,
-      image: "/car4.png",
+      image: "/car1.png",
+      image1: "/heart.png",
     },
-
     {
       name: "New MG ZS",
       type: "SUV",
@@ -64,55 +66,69 @@ const Recent = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car5.png",
+      image: "/car.png",
+      image1: "/heart.png",
     },
   ];
 
   return (
-    <div className="p-6 text-center bg-[#F6F7F9]">
-      <div className="w-[196px] h-[44px]">
-        <h2 className="  text-base leading-[20.16px]  font-semibold mb-6  text-[#90A3BF]">
-          Recent Car
+    <div className="p-6 bg-[#F6F7F9] mx-auto w-full sm:w-[600px] md:w-[900px] xl:w-[1015px]">
+      {/* Header */}
+      <div className="mb-6">
+        <h2 className="text-base font-semibold text-[#90A3BF] text-center">
+          Recent Cars
         </h2>
       </div>
-      <div className="   w-[1200px] object-center ml-48  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {/* Cars Grid */}
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cars.map((car, index) => (
           <div
-            className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden "
             key={index}
+            className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
           >
-            <div className="p-4 w-[304px] h-[200px]">
-              <h3 className="text-lg font-semibold">{car.name}</h3>
+            {/* Car Info */}
+            <div className="p-4">
+              <div className="flex justify-between items-center">
+                <h3 className="text-lg font-semibold">{car.name}</h3>
+                <Image src={car.image1} alt="Favorite" width={24} height={24} />
+              </div>
               <p className="text-sm text-gray-500">{car.type}</p>
             </div>
-            <div className="object-center ml-7">
+
+            {/* Car Image */}
+            <div className="flex justify-center">
               <Image
                 src={car.image}
                 alt={car.name}
-                className="w-[232px] h-[72px] object-center"
-                width={232}
-                height={72}
+                className="w-auto h-[72px] object-contain"
+                width={272}
+                height={84}
               />
             </div>
+
+            {/* Specifications */}
             <div className="p-4">
               <div className="flex justify-between text-sm text-gray-500 mt-4">
-                <p>
+                <p className="flex items-center gap-1">
                   {car.fuel}
-                  <Image src="/gas.png" alt="" width={24} height={24} />
+                  <Image src="/gas.png" alt="Fuel" width={24} height={24} />
                 </p>
-                <p>
-                  {car.transmission}{" "}
-                  <Image src="/c.png" alt="" width={24} height={24} />
+                <p className="flex items-center gap-1">
+                  {car.transmission}
+                  <Image src="/c.png" alt="Transmission" width={24} height={24} />
                 </p>
-                <p>
-                  {car.people}{" "}
-                  <Image src="/pro.png" alt="" width={24} height={24} /> People
+                <p className="flex items-center gap-1">
+                  {car.people}
+                  <Image src="/pro.png" alt="Seats" width={24} height={24} />{" "}
+                  People
                 </p>
               </div>
 
-              <div className="flex">
-                <div className="w-[116px] h-[44px]">
-                  <p className="text-lg font-bold mt-2 ">
+              {/* Price and Button */}
+              <div className="flex justify-between items-center mt-4">
+                <div>
+                  <p className="text-lg font-bold">
                     ${car.price.toFixed(2)} / day
                     {car.originalPrice && (
                       <span className="text-sm line-through text-gray-400 ml-2">
@@ -121,11 +137,9 @@ const Recent = () => {
                     )}
                   </p>
                 </div>
-                <div className="flex justify-center items-center">
-                  <button className="mt-4 w-[116px] h-[44px] top-[320px] left-[164px] pr-[20px] pl-[20px] gap-[8px]  ml-9 bg-[#3563E9] text-white py-2 px-4 rounded-[4px] hover:bg-blue-600">
-                    Rent Now
-                  </button>
-                </div>
+                <button className="bg-[#3563E9] text-white py-2 px-4 rounded hover:bg-blue-600">
+                  Rent Now
+                </button>
               </div>
             </div>
           </div>

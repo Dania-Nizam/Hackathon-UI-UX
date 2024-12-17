@@ -5,14 +5,14 @@ const FilterComponent: React.FC = () => {
   const [price, setPrice] = useState<number>(100);
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-white rounded-lg shadow-lg border h-full border-gray-200">
+    <div className="p-6 w-full sm:w-[320px] md:w-[350px] lg:w-[360px] lg:h-[2016px] xl:w-[360px]  max-w-full mx-auto bg-white rounded-lg shadow-lg border border-gray-200">
       {/* Type Section */}
       <div className="mb-6">
         <h3 className="text-base font-semibold text-gray-800 mb-4">Type</h3>
         <div className="space-y-3">
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <input type="checkbox" id="sport" className="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" />
-            <label htmlFor="sport" className="ml-3 text-sm text-gray-700 ">Sport (10)</label>
+            <label htmlFor="sport" className="ml-3 text-sm text-gray-700">Sport (10)</label>
           </div>
           <div className="flex items-center">
             <input type="checkbox" id="suv" className="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500" defaultChecked />
@@ -71,7 +71,9 @@ const FilterComponent: React.FC = () => {
           onChange={(e) => setPrice(Number(e.target.value))}
           className="w-full h-2 bg-[#3563E9] rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <p className="mt-2 text-xl font-semibold text-[#596780] leading-[30px] tracking-[-2%]  w-[296px] h-[24px] ">Max: ${price}.00</p>
+        <p className="mt-2 text-xl font-semibold text-[#596780] leading-[30px] tracking-[-2%] w-full">
+          Max: ${price}.00
+        </p>
       </div>
     </div>
   );
