@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between items-center p-4 bg-white w-full">
+      <div className="flex flex-wrap justify-between lg:w-[1440px] lg:h-[124px] items-center p-4 bg-white ">
         {/* Left Section */}
         <div className="flex items-center gap-3">
           <div>
@@ -28,17 +28,20 @@ const Navbar = () => {
             High Fidelity Dashboard - Home Rent
           </h1>
 
-          <div className="ml-20 flex flex-wrap gap-4">
-            <Link href="/category" className="text-base sm:text-lg md:text-xl">
+          <div className="lg:ml-20 mt-32 lg:mt-0 flex lg:flex-row flex-col gap-2 ">
+          <Link href="/" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
+              Home
+            </Link>
+            <Link href="/category" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
               Category
             </Link>
-            <Link href="/contact" className="text-base sm:text-lg md:text-xl">
+            <Link href="/contact" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
               Contact
             </Link>
-            <Link href="/form" className="text-base sm:text-lg md:text-xl">
+            <Link href="/form" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
               Form
             </Link>
-            <Link href="/Detail" className="text-base sm:text-lg md:text-xl">
+            <Link href="/Detail" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
               Detail
             </Link>
           </div>
@@ -55,7 +58,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <header className="text-gray-600 bg-white shadow-md body-font">
+      <header className="text-gray-600 lg:w-[1440px] lg:h-[124px] bg-white shadow-md body-font">
         <div className="container mx-auto flex flex-wrap p-5 items-center justify-between">
           {/* Logo */}
           <a className="flex title-font font-medium items-center text-gray-900">

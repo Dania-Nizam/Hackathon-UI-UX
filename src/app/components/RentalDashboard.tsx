@@ -5,7 +5,7 @@ const RentalDashboard = () => {
   return (
     <div className="lg:w-[1440px] lg:h-[900px] flex flex-col lg:flex-row  bg-[#F6F7F9] w-full h-full">
       {/* Sidebar */}
-      <div className="w-[286px] flex justify-between h-[900px] lg:w-1/5 bg-white p-6 shadow-md">
+      <div className="lg:w-[286px] w-full  flex justify-center  lg:justify-between h-[900px]  bg-white p-6 shadow-md">
         <nav className="space-y-4 ">
           <div className="font-semibold text-[#90A3BF] ml-4 mt-6">MAIN MENU</div>
           <ul className="space-y-2 ">
@@ -34,10 +34,10 @@ const RentalDashboard = () => {
       <div className="flex-1 p-6 lg:p-8">
         <div className="flex flex-col lg:flex-row gap-x-6">
           {/* Details Rental */}
-          <div className="flex-1 w-[534px] h-[836px]   bg-white p-6 shadow-md rounded-lg">
+          <div className="flex-1 w-full h-[836px] lg:w-[534px]   bg-white p-6 shadow-md rounded-lg">
             <h2 className="mb-4 text-xl font-bold text-[#1A202C]">Details Rental</h2>
             <div>
-              <Image src="/Maps.png" alt="Map" width={486} height={272} className="mb-6" />
+              <Image src="/Maps.png" alt="Map" width={486} height={272} className="mb-6  md:w-[486px]" />
               <div className="flex mb-4">
                 <div className="flex items-center mr-4">
                   <Image
@@ -96,24 +96,24 @@ const RentalDashboard = () => {
           </div>
 
           {/* Top Car Rental */}
-          <div className="w-[524px] h-[324px]  bg-white p-6 shadow-md rounded-lg">
+          <div className="lg:w-[524px] lg:h-[324px] mt-4 h-[500px] w-full bg-white p-6 shadow-md rounded-lg">
             <h2 className="leading-[30px] font-bold text-xl tracking-[-3%] mb-4">
               Top 5 Car Rental
             </h2>
             <div className="flex">
-              <div className="relative w-[220px] h-[220px] ">
+              <div className="sm:relative absolute mt-52 md:ml-28  md:mt-16 sm:mt-0 w-[220px] h-[220px] lg:absolute lg:mt-0 lg:ml-0">
                 <Image
                   src="/Chart.png"
                   alt=""
                   width={220}
                   height={220}
-                  className="absolute inset-0"
+                  className="absolute inset-0  "
                 />
-                <div className="absolute leading-[36px] tracking-[-3%] inset-0 font-bold text-2xl mt-20 ml-16 text-[#1A202C] ">
+                <div className="absolute leading-[36px] tracking-[-3%] inset-0 font-bold sm:text-2xl text-xl sm:mt-20 sm:ml-16 ml-20 mt-20 text-[#1A202C] ">
                   72,030
                 </div>
               </div>
-              <ul className="text-sm text-gray-500 space-y-2 mt-7 ml-6">
+              <ul className="text-sm text-gray-500 space-y-2 mt-7 md:mt-16 md:ml-36 ml-6 lg:ml-72">
                 <div className="flex gap-[39px] w-[232px] h-[24px]">
                   <li className="text-sm font-semibold text-[#90A3BF] leading-[21px] tracking-[-2%]">
                     Sport Car

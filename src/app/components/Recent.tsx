@@ -72,7 +72,7 @@ const Recent = () => {
   ];
 
   return (
-    <div className="p-6 bg-[#F6F7F9] mx-auto w-full sm:w-[600px] md:w-[900px] xl:w-[1015px]">
+    <div className="p-6 bg-[#F6F7F9] mx-auto   lg:w-[1015px]">
       {/* Header */}
       <div className="mb-6">
         <h2 className="text-base font-semibold text-[#90A3BF] text-center">
@@ -81,14 +81,14 @@ const Recent = () => {
       </div>
 
       {/* Cars Grid */}
-      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {cars.map((car, index) => (
           <div
             key={index}
             className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
           >
             {/* Car Info */}
-            <div className="p-4">
+            <div className="p-4 lg:w-[317px] lg:h-[200px]">
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-semibold">{car.name}</h3>
                 <Image src={car.image1} alt="Favorite" width={24} height={24} />

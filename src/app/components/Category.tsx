@@ -3,7 +3,8 @@
 import React from "react";
 import Image from "next/image";
 import PickupDropoffSection from "./PickupDropoffSection";
-import FilterComponent from "./Filter";
+
+import FilterComponent1 from "./filter1";
 
 const Category = () => {
   const cars = [
@@ -113,9 +114,9 @@ const Category = () => {
   ];
 
   return (
-    <div className="p-6 bg-[#F6F7F9] flex flex-col lg:flex-row lg:space-x-6">
+    <div className=" lg:w-[1440px] p-0 lg:h-[1600px] bg-[#F6F7F9] flex flex-col lg:flex-row lg:space-x-6">
       <div className="lg:w-1/3 ">
-       <FilterComponent/>
+       <FilterComponent1/>
       </div>
 
       <div className="lg:w-3/4">
@@ -126,7 +127,7 @@ const Category = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cars.map((car, index) => (
             <div
-              className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
+              className="border lg:w-[317px] lg:h-[388px] gap-2 border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
               key={index}
             >
               <div className="p-4">

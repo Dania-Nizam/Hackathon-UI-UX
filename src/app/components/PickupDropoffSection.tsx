@@ -2,7 +2,7 @@ import { HiOutlineArrowsUpDown } from "react-icons/hi2";
 
 const PickupDropoffSection = () => {
     return (
-      <div className="flex flex-col lg:flex-row justify-between items-center bg-white p-6 rounded-lg shadow-md mt-4    ">
+      <div className="flex flex-col xl:flex-row justify-between items-center bg-white p-6 rounded-lg shadow-md mt-4    ">
         {/* Pickup Section */}
         <div className="flex-1 flex flex-col space-y-4">
           <h3 className="text-lg font-semibold">Pick-Up</h3>

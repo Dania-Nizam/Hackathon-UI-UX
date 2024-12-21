@@ -8,17 +8,17 @@ const PaymentConfirmation: React.FC = () => {
  
   return (
     <div>
-      <div className=" w-[852px] h-[596px] rounded-[10px] p-6   bg-white shadow-lg border border-gray-200 space-y-8 mt-6 mb-2 ">
+      <div className=" lg:w-[852px] lg:h-[596px] w-full h-full rounded-[10px] p-6   bg-white shadow-lg border border-gray-200 space-y-8 mt-6 mb-2 ">
         {/* Payment Method Section */}
         <div>
           <h3 className=" w-[200px] h-[24px] font-medium  text-xl leading-[30px] tracking-[-3%] text-[#1A202C] mb-2">
             Payment Method
           </h3>
-          <p className=" w-[236px] h-[20px] leading-[21px] tracking-[-2%] text-sm text-[#90A3BF]  font-medium mb-4">
+          <p className=" lg:w-[236px] h-[20px] leading-[21px] tracking-[-2%] text-sm text-[#90A3BF]  font-medium mb-4">
             Please enter your payment method
           </p>
 
-          <div className="space-y-4 bg-[#F6F7F9] w-[804px] h-[308px] ">
+          <div className="space-y-4 bg-[#F6F7F9] lg:w-[804px] lg:h-[308px]  ">
             {/* Credit Card Option */}
             <div>
               <label className="flex items-center cursor-pointer">
@@ -40,19 +40,19 @@ const PaymentConfirmation: React.FC = () => {
                 alt="Visa and Mastercard logos"
                 width={92}
                 height={20}
-                className=" w-[92px] h-[20px] top-[24px]  ml-[700px] mb-20 gap-[12px]"
+                className=" lg:w-[92px] lg:h-[20px] top-[24px]  lg:ml-[700px] mb-20 gap-[12px]"
               />
 
               {selectedPayment === "credit-card" && (
                 <div className="mt-4 space-y-4">
-                  <div className="grid grid-cols-2 gap-2  ">
+                  <div className="grid sm:grid-cols-2 gap-2  ">
                     <label>
                       {" "}
                       Card Number
                       <input
                         type="text"
                         placeholder="Card Number"
-                        className="p-3  w-[362px] h-[56px]  rounded-[10px] border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className=" flex p-3 lg:w-[362px] lg:h-[56px] w-[180px] sm:w-[220px] rounded-[10px] border border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </label>
                     <label>
@@ -60,18 +60,18 @@ const PaymentConfirmation: React.FC = () => {
                       <input
                         type="text"
                         placeholder="Expiration Date (MM/YY)"
-                        className="p-3 border w-[362px] h-[56px]  rounded-[10px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="flex p-3 border lg:w-[362px] h-[56px] w-[180px] sm:w-[220px] rounded-[10px] border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </label>
                   </div>
-                  <div className="grid grid-cols-2 gap-4 ">
+                  <div className="grid sm:grid-cols-2  gap-4 ">
                     <label>
                       {" "}
                       Card holder
                       <input
                         type="text"
                         placeholder="Card Holder"
-                        className="p-3  border w-[362px] h-[56px]  rounded-[10px] border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className=" flex p-3  border lg:w-[362px] h-[56px] w-[180px] sm:w-[220px] rounded-[10px] border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </label>
                     <label>
@@ -79,7 +79,7 @@ const PaymentConfirmation: React.FC = () => {
                       <input
                         type="text"
                         placeholder="CVC"
-                        className=" flex p-3  border w-[362px] h-[56px]  rounded-[10px] border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className=" flex p-3  border lg:w-[362px] h-[56px] w-[180px] sm:w-[220px] rounded-[10px] border-gray-300  focus:outline-none focus:ring-2 focus:ring-blue-500"
                       />
                     </label>
                   </div>
@@ -89,7 +89,7 @@ const PaymentConfirmation: React.FC = () => {
             </div>
 
             {/* PayPal Option */}
-            <div className="mt-10 bg-[#F6F7F9] rounded-[10px] w-[804px] h-[56px] top-[436px] left-[24px] p-4 mb-3 ">
+            <div className="mt-10 bg-[#F6F7F9] rounded-[10px] lg:w-[804px] w-[200px] sm:w-[400px] h-[56px]  top-[436px] left-[24px] p-4 mb-3 ">
               {" "}
               <label className="flex items-center cursor-pointer ">
               <input
@@ -107,14 +107,14 @@ const PaymentConfirmation: React.FC = () => {
                     alt="PayPal logo"
                     width={100}
                     height={24}
-                    className="ml-[600px] w-[100px] h-[24px]"
+                    className="lg:ml-[600px] sm:ml-20 lg:w-[100px] ml-2 h-[24px] "
                   />
                 </span>
               </label>
             </div>
 
             {/* Bitcoin Option */}
-            <div className=" bg-[#F6F7F9] rounded-[10px] w-[804px] h-[56px] top-[436px] left-[24px] p-4 mb-20 ">
+            <div className=" bg-[#F6F7F9] rounded-[10px] lg:w-[804px] w-[200px] sm:w-[400px] h-[56px] top-[436px] left-[24px] p-4 mb-20 ">
               <label className="flex items-center cursor-pointer">
                 <input
                   type="radio"
@@ -132,7 +132,7 @@ const PaymentConfirmation: React.FC = () => {
                     alt="Bitcoin logo"
                     width={94}
                     height={20}
-                    className="ml-[600px] w-[94px] h-[20px] "
+                    className="lg:ml-[600px] sm:ml-20 ml-2 sm:w-[94px] h-[20px] "
                   />
                 </span>
               </label>
@@ -141,7 +141,7 @@ const PaymentConfirmation: React.FC = () => {
         </div>
       </div>
       {/* Confirmation Section */}
-      <div className="w-[852px] h-[484px] space-y-8 rounded-[10px] shadow-lg border border-gray-200 p-6 mt-14 bg-[#FFFFFF]">
+      <div className="lg:w-[852px] sm:h-[484px] space-y-8 rounded-[10px] shadow-lg border border-gray-200 p-6 mt-14 bg-[#FFFFFF]">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           Confirmation
         </h3>
@@ -150,7 +150,7 @@ const PaymentConfirmation: React.FC = () => {
         </p>
 
         <div className="space-y-3  ">
-          <label className="flex items-center cursor-pointer  w-[804px] h-[56px] rounded-[10px] bg-[#F6F7F9]">
+          <label className="flex items-center cursor-pointer  lg:w-[804px] lg:h-[56px]  rounded-[10px] bg-[#F6F7F9]">
             <input
               type="checkbox"
               checked={termsAccepted}
@@ -162,13 +162,13 @@ const PaymentConfirmation: React.FC = () => {
               }}
             />
 
-            <span className="ml-3 text-gray-700 text-sm w-[804px] h-[56px] rounded-[10px] bg-[#F6F7F9] p-4">
+            <span className="ml-3 text-gray-700 text-sm lg:w-[804px] lg:h-[56px] rounded-[10px] bg-[#F6F7F9] p-4">
               I agree with sending marketing and newsletter emails. No spam,
               promised!
             </span>
           </label>
 
-          <label className="flex items-center cursor-pointer w-[804px] h-[56px] rounded-[10px] bg-[#F6F7F9]">
+          <label className="flex items-center cursor-pointer lg:w-[804px] lg:h-[56px] rounded-[10px] bg-[#F6F7F9]">
             <input
               type="checkbox"
               checked={termsAccepted}
@@ -180,7 +180,7 @@ const PaymentConfirmation: React.FC = () => {
               }}
             />
 
-            <span className="ml-3 text-gray-700 text-sm w-[804px] h-[56px] rounded-[10px] bg-[#F6F7F9] p-4">
+            <span className="ml-3 text-gray-700 text-sm lg:w-[804px] lg:h-[56px] rounded-[10px]  bg-[#F6F7F9] p-4">
               I agree with our terms and conditions and privacy policy.
             </span>
           </label>

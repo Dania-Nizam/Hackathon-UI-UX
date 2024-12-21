@@ -21,11 +21,11 @@ const HeroSection = () => {
   ];
 
   return (
-    <div>
+    <div className="lg:w-[1440px]">
       {/* Parent container to align both sections side by side */}
       <div className="flex flex-wrap gap-6 p-6">
         {/* First Section with one background color */}
-        <div className="flex-1 min-w-[300px] w-[640px] h-[360px] top-[32px] left-[64px]  bg-[#54A6FF] rounded-[10px] p-6 shadow-lg">
+        <div className="flex-1 min-w-[300px] sm:w-[640px] sm:h-[360px] top-[32px] left-[64px]  bg-[#54A6FF] rounded-[10px] p-6 shadow-lg">
           {heroData.slice(0, 1).map((item, index) => (
             <div
               key={index}
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <p className="mb-6 text-base leading-[24px] tracking-[-2%] font-medium">
                   {item.description}
                 </p>
-                <button className="text-white w-[120px] h-[44px] bg-[#3563E9] font-semibold py-2 px-4 rounded hover:bg-blue-100 leading-[24px] tracking-[-2%] text-base">
+                <button className="text-white w-[120px] h-[44px] bg-[#3563E9] font-semibold py-2 px-4 rounded hover:bg-blue-700 leading-[24px] tracking-[-2%] text-base">
                   {item.buttonText}
                 </button>
               </div>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                   alt={item.title}
                   width={406}
                   height={116}
-                  className="w-[406px] h-[116px] top-[234px] left-[137px]"
+                  className="w-[406px] h-[116px] "
                 />
               </div>
             </div>
@@ -69,7 +69,7 @@ const HeroSection = () => {
                 <p className="mb-6 text-base leading-[24px] tracking-[-2%] font-medium">
                   {item.description}
                 </p>
-                <button className="text-white bg-[#54A6FF] font-semibold py-2 px-4 rounded hover:bg-green-100 leading-[24px] tracking-[-2%] text-base">
+                <button className="text-white bg-[#54A6FF] font-semibold py-2 px-4 rounded hover:bg-blue-700 leading-[24px] tracking-[-2%] text-base">
                   {item.buttonText}
                 </button>
               </div>

@@ -46,7 +46,7 @@ const CarRental = () => {
   ];
 
   return (
-    <div className="p-6 text-center bg-[#F6F7F9]">
+    <div className="p-6 lg:w-[1440px] text-center bg-[#F6F7F9]">
       <div className="w-[92px] h-[24px]">
         
         <h2 className="text-base leading-[20.16px]  font-semibold mb-6  text-[#90A3BF]">
@@ -59,7 +59,7 @@ const CarRental = () => {
             className="border border-gray-300 rounded-lg shadow-md bg-white overflow-hidden"
             key={index}
           >
-            <div className="p-4 w-[304px] h-[200px]">
+            <div className="p-4 sm:w-[304px] sm:h-[200px]">
               <div className="flex justify-evenly">
                 <h3 className="text-lg font-semibold">{car.name}</h3>
                 <Image src="/heart.png" alt="" width={24} height={20} />
@@ -70,7 +70,7 @@ const CarRental = () => {
               <Image
                 src={car.image}
                 alt={car.name}
-                className="w-[232px] h-[72px] object-center"
+                className="w-[232px] h-[72px] sm:ml-0 ml-12 object-center"
                 width={232}
                 height={72}
               />

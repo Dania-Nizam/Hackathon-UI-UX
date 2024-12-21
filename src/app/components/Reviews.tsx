@@ -27,7 +27,7 @@ const reviews = [
 const Reviews = () => {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 overflow-auto mx-auto 
-                    w-full sm:w-[600px] md:w-[800px] lg:w-[900px] xl:w-[1000px] 
+                    w-full  lg:w-[1016px] 
                     h-[452px]">
       {/* Header */}
       <div className="flex items-center gap-2 mb-6">

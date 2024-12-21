@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <footer className="text-gray-600 body-font lg:w-[1440px] lg:h-[480px]">
+      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-wrap flex-wrap flex-col">
         {/* Logo and Description */}
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left pl-6 ">
           <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">

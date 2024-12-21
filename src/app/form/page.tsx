@@ -4,7 +4,7 @@ import PaymentConfirmation from "../components/Payment";
 
 const RentalForm = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-8 p-6 min-h-screen bg-[#F6F7F9] rounded-lg">
+    <div className="flex flex-col xl:flex-row gap-8 p-6 min-h-screen bg-[#F6F7F9] rounded-lg">
       {/* Form Section */}
       <div className="flex-1 bg-[#F6F7F9] p-6 h-auto gap-[32px] rounded-lg">
         {/* Billing Info */}
@@ -97,7 +97,7 @@ const RentalForm = () => {
       </div>
 
       {/* Summary Section */}
-      <div className="bg-white w-[492px] h-[560px] p-6 shadow-lg rounded-lg flex flex-col  mt-8 lg:mt-0">
+      <div className="bg-white xl:w-[492px] lg:h-[560px] p-6 shadow-lg rounded-lg flex flex-col   mt-8 ">
         <h2 className="text-xl font-bold mb-4">Rental Summary</h2>
         <div className="flex items-center mb-4">
           <Image

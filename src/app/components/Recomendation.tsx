@@ -99,7 +99,7 @@ const Recomendation = () => {
   ];
 
   return (
-    <div className="p-6 text-center bg-[#F6F7F9] ">
+    <div className="p-6 lg:w-[1440px] text-center bg-[#F6F7F9] ">
       <div className="w-[196px] h-[44px]">
         <h2 className="  text-base leading-[20.16px]  font-semibold mb-6  text-[#90A3BF] ">
           Recomendation Car
@@ -111,15 +111,15 @@ const Recomendation = () => {
             className="border border-gray-300  rounded-lg shadow-md bg-white overflow-hidden"
             key={index}
           >
-            <div className="p-4 w-[304px] h-[200px]">
-              <div className="flex"><h3 className="text-lg font-semibold gap-20">{car.name}</h3><div className="w-[24px] h-[24px] ml-24 "><Image src={car.image1} alt="" width={24} height={24}/></div></div>
+            <div className="p-4 sm:w-[304px] sm:h-[200px]">
+              <div className="flex"><h3 className="text-lg font-semibold   ml-10 gap-20">{car.name}</h3><div className="w-[24px] h-[24px] sm:ml-24 ml-36"><Image src={car.image1} alt="" width={24} height={24} /></div></div>
               <p className="text-sm text-gray-500 mr-44">{car.type}</p>
             </div>
             <div className="object-center lg:ml-7">
               <Image
                 src={car.image}
                 alt={car.name}
-                className="w-[232px] h-[72px] object-center"
+                className=" w-[232px] h-[72px] ml-20 sm:ml-0 sm:object-center"
                 width={232}
                 height={72}
               />

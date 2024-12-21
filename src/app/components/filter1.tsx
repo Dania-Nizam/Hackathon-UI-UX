@@ -1,11 +1,11 @@
 "use client"
 import React, { useState } from "react";
 
-const FilterComponent: React.FC = () => {
+const FilterComponent1: React.FC = () => {
   const [price, setPrice] = useState<number>(100);
 
   return (
-    <div className=" w-full p-6 mt-0 lg:w-[360px] h-full lg:h-[2016px]     bg-white rounded-lg shadow-lg border border-gray-200">
+    <div className="p-6 mt-0 w-full h-full lg:w-[360px] lg:h-[1600px]    bg-white rounded-lg shadow-lg border border-gray-200">
       {/* Type Section */}
       <div className="mb-6">
         <h3 className="text-base font-semibold text-gray-800 mb-4">Type</h3>
@@ -79,4 +79,4 @@ const FilterComponent: React.FC = () => {
   );
 };
 
-export default FilterComponent;
+export default FilterComponent1;
