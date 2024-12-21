@@ -49,7 +49,7 @@ const Category = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car.png",
+      image: "/Car.png",
       image1:"/heart.png",
     },
 
@@ -73,7 +73,7 @@ const Category = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car.png",
+      image: "/Car.png",
       image1:"/heart.png",
     },
 

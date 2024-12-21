@@ -44,7 +44,7 @@ const Recent = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car.png",
+      image: "/Car.png",
       image1: "/heart.png",
     },
     {
@@ -66,7 +66,7 @@ const Recent = () => {
       fuel: "80L",
       transmission: "Manual",
       people: 2,
-      image: "/car.png",
+      image: "/Car.png",
       image1: "/heart.png",
     },
   ];
