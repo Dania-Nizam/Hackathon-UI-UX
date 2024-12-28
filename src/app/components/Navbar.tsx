@@ -28,27 +28,11 @@ const Navbar = () => {
             High Fidelity Dashboard - Home Rent
           </h1>
 
-          <div className="lg:ml-20 mt-32 lg:mt-0 flex lg:flex-row flex-col gap-2 ">
-          <Link href="/" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
-              Home
-            </Link>
-            <Link href="/category" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
-              Category
-            </Link>
-            <Link href="/contact" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
-              Contact
-            </Link>
-            <Link href="/form" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
-              Form
-            </Link>
-            <Link href="/Detail" className="text-base sm:text-lg md:text-xl hover:text-blue-700">
-              Detail
-            </Link>
-          </div>
+          
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center gap-3 mt-4 sm:mt-0">
+        <div className="flex items-center gap-3 mt-4 lg:mr-14 sm:mt-0">
           <div className="text-[#666666] font-medium text-sm sm:text-base md:text-lg lg:text-xl">
             Last Updated:
           </div>
